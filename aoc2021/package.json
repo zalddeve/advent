@@ -5,6 +5,7 @@
     "type": "module",
     "scripts": {
         "start": "aocrunner day",
+        "debug": "node --inspect=9229 ./node_modules/aocrunner/lib/cli.js day",
         "build": "aocrunner build",
         "format": "prettier -w src"
     },
