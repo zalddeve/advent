@@ -30,12 +30,35 @@
  *
  */
 
-export function getLines(rawInput: string) {
+// type V<T> = (typeof T === 'number') ? Number : String;
+// export function getValues<T = number | string>(rawInput: string, separator: string = '\n', asNumber: boolean = false): T[] {
+//     return rawInput
+//         .split(separator)
+//         .map((value) => value.trim())
+//         .filter(V<T>)
+//         // .map(value => asNumber ? Number(value) : String(value))
+//     // if (asNumber)
+//     //     return input.map(Number);
+//     // else
+//     //     return input.map(Number);
+// }
+// export function getValues<T extends number | string = string>(rawInput: string, separator: string = '\n', asNumber: boolean = false): T extends asNumber {
+//     type isNumber<T> = T extends number ? true : false;
+//     type t = isNumber<1>;
+//     console.log(t)
+//     return rawInput
+//         .split(separator)
+//         .map((value) => value.trim())
+//         .filter(value => t ? Number : String) as T[];
+// }
+export function getValues<T extends string | number = string>(rawInput: string, separator: string = '\n', asNumber: boolean = false): T[] {
     return rawInput
-        .split('\n')
-        .map((line) => line.trim())
-        .filter((line) => line);
+        .split(separator)
+        .map((value) => value.trim())
+        .filter(value => value)
+        .map(value => asNumber ? parseInt(value) : value) as T[];
 }
+
 
 export class Matrix {
     rows: number;

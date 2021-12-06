@@ -1,10 +1,10 @@
 import run from 'aocrunner';
-import { getLines, Matrix, Line, Point } from '../utils/index.js';
+import { getValues, Matrix, Line, Point } from '../utils/index.js';
 
 const maxCoordinates = { x: 0, y: 0 };
 
 const parseInput = (rawInput: string) => {
-    const vents = getLines(rawInput);
+    const vents = getValues(rawInput);
 
     const regexp = /(?<x1>\d+),(?<y1>\d+) -> (?<x2>\d+),(?<y2>\d+)/;
     const ventLines: Line[] = [];
