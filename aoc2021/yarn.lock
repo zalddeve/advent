@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@types/node@^16.11.6":
-  version "16.11.11"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.11.tgz#6ea7342dfb379ea1210835bada87b3c512120234"
-  integrity sha512-KB0sixD67CeecHC33MYn+eYARkqTheIRNuu97y2XMjR7Wu3XibO1vaY6VBV6O/a89SPI81cEUIYT87UqUWlZNw==
+"@types/node@^16.11.12":
+  version "16.11.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.12.tgz#ac7fb693ac587ee182c3780c26eb65546a1a3c10"
+  integrity sha512-+2Iggwg7PxoO5Kyhvsq9VarmPbIelXP070HMImEpbtGCoyWNINQj4wzjbQCXzdHTRXnqufutJb5KAURZANNBAw==
 
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.5"
@@ -55,10 +55,10 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
-aocrunner@^1.4.5:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/aocrunner/-/aocrunner-1.5.0.tgz#564034e37729d7d41bd6c880dbb3858069bb5b43"
-  integrity sha512-vhzsi4Vt4h2Gx/688EJ2K1oy1iew15hIp63zl+cMh66G9883p7chCpyx3yKB+nE3onTvNDDLkS8LJ3pdAtcONQ==
+aocrunner@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/aocrunner/-/aocrunner-1.6.0.tgz#b331c23c8638fa30536cd36ca768fd169e79ba19"
+  integrity sha512-MYTLujWheTeIrreKlH0V5zXgHKbYD9nc0GSciTSUJ7akDBx1xGzIWWGs0XnY20O1q2+b2b05QVvgJ4QTY0CbkQ==
   dependencies:
     chokidar "^3.5.2"
     common-tags "^1.8.0"
@@ -547,10 +547,10 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prettier@^2.4.1:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.0.tgz#a6370e2d4594e093270419d9cc47f7670488f893"
-  integrity sha512-FM/zAKgWTxj40rH03VxzIPdXmj39SwSjwG0heUcNFwI+EMZJnY93yAiKXM3dObIKAM5TA88werc8T/EwhB45eg==
+prettier@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 prompts@^2.4.2:
   version "2.4.2"
