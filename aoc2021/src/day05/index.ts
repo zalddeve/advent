@@ -25,7 +25,7 @@ const parseInput = (rawInput: string) => {
 const part1 = (rawInput: string) => {
     const ventLines = parseInput(rawInput);
 
-    const ventsMatrix = new Matrix(maxCoordinates.y, maxCoordinates.x);
+    const ventsMatrix = new Matrix(maxCoordinates.y + 1, maxCoordinates.x + 1);
     for (const ventLine of ventLines) {
         if (ventLine.start.x === ventLine.end.x || ventLine.start.y === ventLine.end.y) {
             ventsMatrix.addLine(ventLine);
@@ -41,7 +41,7 @@ const part1 = (rawInput: string) => {
 const part2 = (rawInput: string) => {
     const ventLines = parseInput(rawInput);
 
-    const ventsMatrix = new Matrix(maxCoordinates.y, maxCoordinates.x);
+    const ventsMatrix = new Matrix(maxCoordinates.y + 1, maxCoordinates.x + 1);
     for (const ventLine of ventLines) {
         ventsMatrix.addLine(ventLine);
     }

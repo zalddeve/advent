@@ -46,7 +46,7 @@ export class Matrix {
     constructor(rows: number, columns: number) {
         this.rows = rows;
         this.columns = columns;
-        this.values = new Array<number[]>(columns + 1).fill([]).map(() => new Array<number>(rows + 1).fill(0));
+        this.values = new Array<number[]>(columns).fill([]).map(() => new Array<number>(rows).fill(0));
     }
 
     addLine(line: Line) {
@@ -79,6 +79,19 @@ export class Matrix {
                 y += slope.y;
             }
         }
+    }
+
+    addRow(y: number, row: number[]) {
+        row.map((value, x) => {
+            this.values[x][y] = value;
+        });
+    }
+
+    at(x: number, y: number) {
+        if (this.values[x]) {
+            return this.values[x][y];
+        }
+        return undefined;
     }
 
     print() {
