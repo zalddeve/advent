@@ -19,7 +19,9 @@
         "aocrunner": "^1.6.0",
         "prettier": "^2.5.1"
     },
-    "dependencies": {},
+    "dependencies": {
+        "ngraph.graph": "^19.1.0"
+    },
     "engines": {
         "node": ">=16.0.0"
     }
